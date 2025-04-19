@@ -2,64 +2,183 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>arshia kharazi</title>
+    <title>Arshia Kharazi - Software Test Engineer</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" href="favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   </head>
   <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="nav-links">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#tools" class="nav-link">Tools</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+      <button class="contact-btn">CONTACT ME</button>
+    </nav>
+
+    <!-- Loading Screen -->
+    <div class="loading-screen">
+      <div class="loading-content">
+        <div class="loading-logo">
+          <i class="fas fa-jedi"></i>
+        </div>
+        <h2 class="loading-text">INITIALIZING SYSTEMS</h2>
+        <div class="progress-container">
+          <div class="progress-bar"></div>
+        </div>
+        <div class="loading-details">
+          <p class="loading-status">Loading Testing Frameworks...</p>
+          <div class="loading-stats">
+            <span class="stat">Selenium <i class="fas fa-check"></i></span>
+            <span class="stat">Cypress <i class="fas fa-check"></i></span>
+            <span class="stat">Playwright <i class="fas fa-check"></i></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="canvas-container"></div>
     <div class="top">
-      <img class="top-cloud" src="images/cloud.png" alt="cloud image">
       <h1>I'm Arshia</h1>
-      <h2>a <span class="pro"> web </span>designer.</h2>
-      <img class="bottom-cloud" src="images/cloud.png" alt="cloud image">
-      <img src="images/mountain.png" alt="mountain image">
+      <h2>a <span class="pro">Software Test</span> Engineer</h2>
     </div>
     <div class="middle-container">
       <div class="profile">
-        <img class="guy" src="https://cdn-icons-png.flaticon.com/512/3107/3107153.png" alt="guy photo">
+        <img class="guy" src="https://cdn-icons-png.flaticon.com/512/3107/3107153.png" alt="profile photo">
         <h2>Hello.</h2>
-        <p class="info">i am an web developer and a software engineering student.
-        i love programming and currently trying to get better at it</p>
+        <p class="info">I am a Software Test Engineer with a passion for quality assurance and automation. 
+        I specialize in creating robust test frameworks and ensuring software reliability through comprehensive testing strategies.</p>
       </div>
       <hr>
       <div class="skills">
         <h2>My Skills.</h2>
         <div class="skill-row">
-          <img class="develop" src="https://cdn-icons-png.flaticon.com/512/2704/2704234.png" alt="deveolpment">
-          <h3>Design and development </h3>
-          <p class="clear">i started learning to code when i was 16 years old i first started making simple games using unity and simple mobile apps using android studio but overtime i fell in love with web development and here i am</p>
+          <img class="develop" src="https://cdn-icons-png.flaticon.com/512/2704/2704234.png" alt="testing">
+          <h3>Test Automation & Development</h3>
+          <p class="clear">Proficient in Selenium, Cypress, and Playwright for web automation testing. 
+          Experienced in creating and maintaining automated test frameworks using Python and JavaScript. 
+          Strong understanding of CI/CD pipelines and integrating automated tests into the development workflow.</p>
         </div>
         <div class="skill-row">
-          <img class="game" src="https://cdn-icons-png.flaticon.com/512/3612/3612569.png" alt="game">
-          <h3>Games</h3>
-          <p class="clear2">i've been playing games since my childhood so one my most developed skills is playing games either with a controller or on a pc and believe it or not i actually learned english through playing games</p>
+          <img class="game" src="https://cdn-icons-png.flaticon.com/512/3612/3612569.png" alt="qa">
+          <h3>Quality Assurance</h3>
+          <p class="clear2">Expert in various testing methodologies including:
+          <ul>
+            <li>Manual and Automated Testing</li>
+            <li>API Testing (Postman, REST Assured)</li>
+            <li>Performance Testing (JMeter)</li>
+            <li>Mobile Testing (Appium)</li>
+            <li>Test Planning and Documentation</li>
+            <li>Bug Tracking and Management</li>
+          </ul></p>
+        </div>
+        <div class="skill-row">
+          <img class="develop" src="https://cdn-icons-png.flaticon.com/512/2704/2704234.png" alt="tools">
+          <h3>Technical Tools & Technologies</h3>
+          <p class="clear">Skilled in:
+          <ul>
+            <li>Programming: Python, JavaScript, Java</li>
+            <li>Testing Tools: Selenium, Cypress, Playwright, Postman</li>
+            <li>CI/CD: Jenkins, GitHub Actions</li>
+            <li>Version Control: Git, GitHub</li>
+            <li>Test Management: Jira, TestRail</li>
+            <li>Databases: SQL, MongoDB</li>
+          </ul></p>
+        </div>
+      </div>
+      <hr>
+      <div class="tools-section">
+        <h2>My Toolbox</h2>
+        <div class="tools-grid">
+          <div class="tool-item">
+            <i class="fab fa-python"></i>
+            <span>Python</span>
+          </div>
+          <div class="tool-item">
+            <i class="fab fa-js"></i>
+            <span>JavaScript</span>
+          </div>
+          <div class="tool-item">
+            <i class="fab fa-java"></i>
+            <span>Java</span>
+          </div>
+          <div class="tool-item">
+            <i class="fas fa-database"></i>
+            <span>SQL</span>
+          </div>
+          <div class="tool-item">
+            <i class="fas fa-server"></i>
+            <span>MongoDB</span>
+          </div>
+          <div class="tool-item">
+            <i class="fas fa-code-branch"></i>
+            <span>Git</span>
+          </div>
+          <div class="tool-item">
+            <i class="fab fa-github"></i>
+            <span>GitHub</span>
+          </div>
+          <div class="tool-item">
+            <i class="fas fa-tasks"></i>
+            <span>Jira</span>
+          </div>
+          <div class="tool-item">
+            <i class="fas fa-vial"></i>
+            <span>Selenium</span>
+          </div>
+          <div class="tool-item">
+            <i class="fas fa-bug"></i>
+            <span>Cypress</span>
+          </div>
+          <div class="tool-item">
+            <i class="fas fa-mobile-alt"></i>
+            <span>Appium</span>
+          </div>
+          <div class="tool-item">
+            <i class="fas fa-tachometer-alt"></i>
+            <span>JMeter</span>
+          </div>
+          <div class="tool-item">
+            <i class="fas fa-plug"></i>
+            <span>Postman</span>
+          </div>
+          <div class="tool-item">
+            <i class="fas fa-cogs"></i>
+            <span>Jenkins</span>
+          </div>
+          <div class="tool-item">
+            <i class="fas fa-code"></i>
+            <span>Playwright</span>
+          </div>
         </div>
       </div>
       <hr>
       <div class="contact-me">
         <h2>Get In Touch</h2>
-        <h3>if my resume has interested you</h3>
-        <p class="consider">consider contacting me so we can talk over web development or even games</p>
-        <a class="btn" href="thepaladin496@gmail.com">CONTACT ME</a>
+        <h3>Looking for a detail-oriented Test Engineer?</h3>
+        <p class="consider">I'm passionate about ensuring software quality and reliability. Let's discuss how I can contribute to your team's success.</p>
+        <a class="btn" href="mailto:thepaladin496@gmail.com">CONTACT ME</a>
       </div>
     </div>
 
-
     <div class="bottom-container">
-      <a class="footer-link" href="https://discord.gg/QEe5GQ8">Discord</a>
-      <a class="footer-link" href="">Steam</a>
+      <a class="footer-link" href="https://www.linkedin.com/in/your-profile">LinkedIn</a>
+      <a class="footer-link" href="https://github.com/your-profile">GitHub</a>
       <a class="footer-link" href="https://twitter.com/Shianosxd">Twitter</a>
-      <p class="foot">© 2022 Arshia Kharazi.</p>
+      <p class="foot">© 2024 Arshia Kharazi.</p>
     </div>
 
-
-    </div>
-
-
-
-
+    <!-- Three.js library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <!-- Custom background animation -->
+    <script src="js/background.js"></script>
   </body>
-</html>
+</html> 

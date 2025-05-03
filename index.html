@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Arshia Kharazi - Software Test Engineer</title>
+    <title>Amirali Kharazi - Software Test Engineer</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" href="favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,9 +19,12 @@
         <a href="#about" class="nav-link">About</a>
         <a href="#skills" class="nav-link">Skills</a>
         <a href="#tools" class="nav-link">Tools</a>
+        <a href="#demo" class="nav-link">Demo</a>
         <a href="#contact" class="nav-link">Contact</a>
       </div>
-      <button class="contact-btn">CONTACT ME</button>
+      <button class="terminal-btn">
+        <span class="terminal-text">&#62; <span class="typing-text">system.exe</span></span>
+      </button>
     </nav>
 
     <!-- Loading Screen -->
@@ -46,139 +49,473 @@
     </div>
 
     <div id="canvas-container"></div>
-    <div class="top">
-      <h1>I'm Arshia</h1>
+    <section id="home" class="top">
+      <h1>I'm Amirali</h1>
       <h2>a <span class="pro">Software Test</span> Engineer</h2>
-    </div>
-    <div class="middle-container">
+    </section>
+    <section id="about" class="middle-container">
       <div class="profile">
-        <img class="guy" src="https://cdn-icons-png.flaticon.com/512/3107/3107153.png" alt="profile photo">
+        <div class="avatar-container">
+          <div class="tech-circle"></div>
+          <div class="tech-ring ring1"></div>
+          <div class="tech-ring ring2"></div>
+          <div class="tech-ring ring3"></div>
+          <div class="scanner-line"></div>
+          <div class="tech-dots">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+          <img class="guy" src="https://cdn-icons-png.flaticon.com/512/3107/3107153.png" alt="profile photo">
+        </div>
         <h2>Hello.</h2>
         <p class="info">I am a Software Test Engineer with a passion for quality assurance and automation. 
         I specialize in creating robust test frameworks and ensuring software reliability through comprehensive testing strategies.</p>
       </div>
       <hr>
-      <div class="skills">
-        <h2>My Skills.</h2>
-        <div class="skill-row">
-          <img class="develop" src="https://cdn-icons-png.flaticon.com/512/2704/2704234.png" alt="testing">
-          <h3>Test Automation & Development</h3>
-          <p class="clear">Proficient in Selenium, Cypress, and Playwright for web automation testing. 
-          Experienced in creating and maintaining automated test frameworks using Python and JavaScript. 
-          Strong understanding of CI/CD pipelines and integrating automated tests into the development workflow.</p>
+    </section>
+    <section id="skills" class="skills">
+      <h2>My Skills.</h2>
+      <div class="skill-row">
+        <img class="develop" src="https://cdn-icons-png.flaticon.com/512/2704/2704234.png" alt="testing">
+        <h3>Test Automation & Development</h3>
+        <p class="clear">Proficient in Selenium, Cypress, and Playwright for web automation testing. 
+        Experienced in creating and maintaining automated test frameworks using Python and JavaScript. 
+        Strong understanding of CI/CD pipelines and integrating automated tests into the development workflow.</p>
+      </div>
+      <div class="skill-row">
+        <img class="game" src="https://cdn-icons-png.flaticon.com/512/3612/3612569.png" alt="qa">
+        <h3>Quality Assurance</h3>
+        <p class="clear2">Expert in various testing methodologies including:
+        <ul>
+          <li>Manual and Automated Testing</li>
+          <li>API Testing (Postman, REST Assured)</li>
+          <li>Performance Testing (JMeter)</li>
+          <li>Mobile Testing (Appium)</li>
+          <li>Test Planning and Documentation</li>
+          <li>Bug Tracking and Management</li>
+        </ul></p>
+      </div>
+      <div class="skill-row">
+        <img class="develop" src="https://cdn-icons-png.flaticon.com/512/2704/2704234.png" alt="tools">
+        <h3>Technical Tools & Technologies</h3>
+        <p class="clear">Skilled in:
+        <ul>
+          <li>Programming: Python, JavaScript, Java</li>
+          <li>Testing Tools: Selenium, Cypress, Playwright, Postman</li>
+          <li>CI/CD: Jenkins, GitHub Actions</li>
+          <li>Version Control: Git, GitHub</li>
+          <li>Test Management: Jira, TestRail</li>
+          <li>Databases: SQL, MongoDB</li>
+        </ul></p>
+      </div>
+    </section>
+    <section id="tools" class="tools-section">
+      <h2>My Toolbox</h2>
+      <div class="tools-grid">
+        <div class="tool-item">
+          <i class="fab fa-python"></i>
+          <span>Python</span>
         </div>
-        <div class="skill-row">
-          <img class="game" src="https://cdn-icons-png.flaticon.com/512/3612/3612569.png" alt="qa">
-          <h3>Quality Assurance</h3>
-          <p class="clear2">Expert in various testing methodologies including:
-          <ul>
-            <li>Manual and Automated Testing</li>
-            <li>API Testing (Postman, REST Assured)</li>
-            <li>Performance Testing (JMeter)</li>
-            <li>Mobile Testing (Appium)</li>
-            <li>Test Planning and Documentation</li>
-            <li>Bug Tracking and Management</li>
-          </ul></p>
+        <div class="tool-item">
+          <i class="fab fa-js"></i>
+          <span>JavaScript</span>
         </div>
-        <div class="skill-row">
-          <img class="develop" src="https://cdn-icons-png.flaticon.com/512/2704/2704234.png" alt="tools">
-          <h3>Technical Tools & Technologies</h3>
-          <p class="clear">Skilled in:
-          <ul>
-            <li>Programming: Python, JavaScript, Java</li>
-            <li>Testing Tools: Selenium, Cypress, Playwright, Postman</li>
-            <li>CI/CD: Jenkins, GitHub Actions</li>
-            <li>Version Control: Git, GitHub</li>
-            <li>Test Management: Jira, TestRail</li>
-            <li>Databases: SQL, MongoDB</li>
-          </ul></p>
+        <div class="tool-item">
+          <i class="fab fa-java"></i>
+          <span>Java</span>
+        </div>
+        <div class="tool-item">
+          <i class="fas fa-database"></i>
+          <span>SQL</span>
+        </div>
+        <div class="tool-item">
+          <i class="fas fa-server"></i>
+          <span>MongoDB</span>
+        </div>
+        <div class="tool-item">
+          <i class="fas fa-code-branch"></i>
+          <span>Git</span>
+        </div>
+        <div class="tool-item">
+          <i class="fab fa-github"></i>
+          <span>GitHub</span>
+        </div>
+        <div class="tool-item">
+          <i class="fas fa-tasks"></i>
+          <span>Jira</span>
+        </div>
+        <div class="tool-item">
+          <i class="fas fa-vial"></i>
+          <span>Selenium</span>
+        </div>
+        <div class="tool-item">
+          <i class="fas fa-bug"></i>
+          <span>Cypress</span>
+        </div>
+        <div class="tool-item">
+          <i class="fas fa-mobile-alt"></i>
+          <span>Appium</span>
+        </div>
+        <div class="tool-item">
+          <i class="fas fa-tachometer-alt"></i>
+          <span>JMeter</span>
+        </div>
+        <div class="tool-item">
+          <i class="fas fa-plug"></i>
+          <span>Postman</span>
+        </div>
+        <div class="tool-item">
+          <i class="fas fa-cogs"></i>
+          <span>Jenkins</span>
+        </div>
+        <div class="tool-item">
+          <i class="fas fa-code"></i>
+          <span>Playwright</span>
         </div>
       </div>
-      <hr>
-      <div class="tools-section">
-        <h2>My Toolbox</h2>
-        <div class="tools-grid">
-          <div class="tool-item">
-            <i class="fab fa-python"></i>
-            <span>Python</span>
+    </section>
+    
+    <!-- Test Automation Demo Section -->
+    <section id="demo" class="demo-section">
+      <h2>Test Automation Demo</h2>
+      <p class="demo-intro">Watch a live execution of automated tests against a sample application.</p>
+      
+      <div class="demo-container">
+        <div class="demo-controls">
+          <button id="run-tests-btn" class="cybr-btn">
+            Run Tests<span class="cybr-btn__glitch">Run_Tests</span>
+          </button>
+          <div class="test-options">
+            <label class="test-option">
+              <input type="checkbox" id="include-api-tests" checked>
+              <span class="checkmark"></span>
+              API Tests
+            </label>
+            <label class="test-option">
+              <input type="checkbox" id="include-ui-tests" checked>
+              <span class="checkmark"></span>
+              UI Tests
+            </label>
+            <label class="test-option">
+              <input type="checkbox" id="include-performance-tests">
+              <span class="checkmark"></span>
+              Performance Tests
+            </label>
           </div>
-          <div class="tool-item">
-            <i class="fab fa-js"></i>
-            <span>JavaScript</span>
+        </div>
+        
+        <div class="terminal">
+          <div class="terminal-header">
+            <div class="terminal-buttons">
+              <span class="terminal-btn red"></span>
+              <span class="terminal-btn yellow"></span>
+              <span class="terminal-btn green"></span>
+            </div>
+            <div class="terminal-title">test-runner@cybr-system</div>
           </div>
-          <div class="tool-item">
-            <i class="fab fa-java"></i>
-            <span>Java</span>
+          <div class="terminal-content" id="terminal-content">
+            <div class="terminal-line">$ <span class="typing-cursor">_</span></div>
           </div>
-          <div class="tool-item">
-            <i class="fas fa-database"></i>
-            <span>SQL</span>
+        </div>
+        
+        <div class="test-results">
+          <div class="result-card passed">
+            <div class="result-icon"><i class="fas fa-check-circle"></i></div>
+            <div class="result-content">
+              <h4>Passed Tests</h4>
+              <span class="result-count" id="passed-count">0</span>
+            </div>
           </div>
-          <div class="tool-item">
-            <i class="fas fa-server"></i>
-            <span>MongoDB</span>
+          <div class="result-card failed">
+            <div class="result-icon"><i class="fas fa-times-circle"></i></div>
+            <div class="result-content">
+              <h4>Failed Tests</h4>
+              <span class="result-count" id="failed-count">0</span>
+            </div>
           </div>
-          <div class="tool-item">
-            <i class="fas fa-code-branch"></i>
-            <span>Git</span>
-          </div>
-          <div class="tool-item">
-            <i class="fab fa-github"></i>
-            <span>GitHub</span>
-          </div>
-          <div class="tool-item">
-            <i class="fas fa-tasks"></i>
-            <span>Jira</span>
-          </div>
-          <div class="tool-item">
-            <i class="fas fa-vial"></i>
-            <span>Selenium</span>
-          </div>
-          <div class="tool-item">
-            <i class="fas fa-bug"></i>
-            <span>Cypress</span>
-          </div>
-          <div class="tool-item">
-            <i class="fas fa-mobile-alt"></i>
-            <span>Appium</span>
-          </div>
-          <div class="tool-item">
-            <i class="fas fa-tachometer-alt"></i>
-            <span>JMeter</span>
-          </div>
-          <div class="tool-item">
-            <i class="fas fa-plug"></i>
-            <span>Postman</span>
-          </div>
-          <div class="tool-item">
-            <i class="fas fa-cogs"></i>
-            <span>Jenkins</span>
-          </div>
-          <div class="tool-item">
-            <i class="fas fa-code"></i>
-            <span>Playwright</span>
+          <div class="result-card pending">
+            <div class="result-icon"><i class="fas fa-clock"></i></div>
+            <div class="result-content">
+              <h4>Pending Tests</h4>
+              <span class="result-count" id="pending-count">0</span>
+            </div>
           </div>
         </div>
       </div>
-      <hr>
-      <div class="contact-me">
-        <h2>Get In Touch</h2>
-        <h3>Looking for a detail-oriented Test Engineer?</h3>
-        <p class="consider">I'm passionate about ensuring software quality and reliability. Let's discuss how I can contribute to your team's success.</p>
-        <a class="btn" href="mailto:thepaladin496@gmail.com">CONTACT ME</a>
+    </section>
+    
+    <section id="contact" class="contact-me">
+      <h2>Get In Touch</h2>
+      <h3>Looking for a detail-oriented Test Engineer?</h3>
+      <p class="consider">I'm passionate about ensuring software quality and reliability. Let's discuss how I can contribute to your team's success.</p>
+      
+      <div class="contact-grid">
+        <a href="mailto:thepaladin496@gmail.com" class="contact-item email-item">
+          <div class="contact-icon">
+            <i class="fas fa-envelope"></i>
+          </div>
+          <div class="contact-info">
+            <h4>Email</h4>
+            <p class="email-address">thepaladin496@gmail.com</p>
+          </div>
+        </a>
+        
+        <a href="https://twitter.com/Shianosxd" class="contact-item">
+          <div class="contact-icon">
+            <i class="fab fa-twitter"></i>
+          </div>
+          <div class="contact-info">
+            <h4>Twitter</h4>
+            <p>Follow Me</p>
+          </div>
+        </a>
       </div>
-    </div>
+    </section>
 
     <div class="bottom-container">
-      <a class="footer-link" href="https://www.linkedin.com/in/your-profile">LinkedIn</a>
-      <a class="footer-link" href="https://github.com/your-profile">GitHub</a>
-      <a class="footer-link" href="https://twitter.com/Shianosxd">Twitter</a>
-      <p class="foot">© 2024 Arshia Kharazi.</p>
+      <p class="foot">© 2024 Amirali Kharazi.</p>
     </div>
 
     <!-- Three.js library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <!-- Custom background animation -->
     <script src="js/background.js"></script>
+    
+    <!-- Test Automation Demo Script -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // Demo constants
+        const API_TESTS = [
+          { name: 'GET /api/users', status: 'passed', time: '14ms' },
+          { name: 'POST /api/users', status: 'passed', time: '22ms' },
+          { name: 'PUT /api/users/1', status: 'passed', time: '18ms' },
+          { name: 'DELETE /api/users/1', status: 'passed', time: '12ms' },
+          { name: 'GET /api/products', status: 'passed', time: '10ms' },
+          { name: 'GET /api/products/1', status: 'failed', time: '25ms', error: 'Expected status 200 but got 404' },
+          { name: 'POST /api/products', status: 'passed', time: '19ms' },
+          { name: 'GET /api/orders', status: 'passed', time: '31ms' }
+        ];
+        
+        const UI_TESTS = [
+          { name: 'User login flow', status: 'passed', time: '1.2s' },
+          { name: 'Product search functionality', status: 'passed', time: '0.8s' },
+          { name: 'Shopping cart operations', status: 'passed', time: '1.5s' },
+          { name: 'Checkout process', status: 'failed', time: '2.1s', error: 'Element "payment-submit" not found' },
+          { name: 'User registration', status: 'passed', time: '1.1s' },
+          { name: 'Product filtering', status: 'passed', time: '0.9s' }
+        ];
+        
+        const PERFORMANCE_TESTS = [
+          { name: 'Homepage load time', status: 'passed', time: '2.3s' },
+          { name: 'API response time', status: 'warning', time: '350ms', warning: 'Exceeds target of 300ms' },
+          { name: 'Database query performance', status: 'passed', time: '45ms' },
+          { name: 'Image optimization', status: 'failed', time: '4.2s', error: 'Exceeds maximum load time of 3s' }
+        ];
+        
+        // DOM elements
+        const runTestsBtn = document.getElementById('run-tests-btn');
+        const includeApiTests = document.getElementById('include-api-tests');
+        const includeUiTests = document.getElementById('include-ui-tests');
+        const includePerformanceTests = document.getElementById('include-performance-tests');
+        const terminalContent = document.getElementById('terminal-content');
+        const passedCount = document.getElementById('passed-count');
+        const failedCount = document.getElementById('failed-count');
+        const pendingCount = document.getElementById('pending-count');
+        
+        // Test execution state
+        let isRunning = false;
+        let currentLine = 0;
+        let testQueue = [];
+        let results = {
+          passed: 0,
+          failed: 0,
+          pending: 0
+        };
+        
+        // Initialize terminal
+        clearTerminal();
+        
+        // Run tests button click handler
+        runTestsBtn.addEventListener('click', function() {
+          if (isRunning) return;
+          
+          startTestRun();
+        });
+        
+        // Start a new test run
+        function startTestRun() {
+          isRunning = true;
+          clearTerminal();
+          resetTestResults();
+          buildTestQueue();
+          
+          // Show the command being typed
+          typeCommand('npm run test', function() {
+            // After command is typed, start running tests
+            addLine('info', 'Starting test suite...');
+            runNextTest();
+          });
+        }
+        
+        // Build the test queue based on selected options
+        function buildTestQueue() {
+          testQueue = [];
+          
+          if (includeApiTests.checked) {
+            addLine('info', 'Including API tests');
+            testQueue.push({ type: 'header', text: 'Running API Tests...' });
+            testQueue = testQueue.concat(API_TESTS.map(test => ({ type: 'test', ...test, category: 'API' })));
+          }
+          
+          if (includeUiTests.checked) {
+            addLine('info', 'Including UI tests');
+            testQueue.push({ type: 'header', text: 'Running UI Tests...' });
+            testQueue = testQueue.concat(UI_TESTS.map(test => ({ type: 'test', ...test, category: 'UI' })));
+          }
+          
+          if (includePerformanceTests.checked) {
+            addLine('info', 'Including Performance tests');
+            testQueue.push({ type: 'header', text: 'Running Performance Tests...' });
+            testQueue = testQueue.concat(PERFORMANCE_TESTS.map(test => ({ type: 'test', ...test, category: 'Performance' })));
+          }
+          
+          // Update pending count
+          results.pending = testQueue.filter(item => item.type === 'test').length;
+          updateResultsDisplay();
+        }
+        
+        // Run the next test in the queue
+        function runNextTest() {
+          if (testQueue.length === 0) {
+            finishTestRun();
+            return;
+          }
+          
+          const currentTest = testQueue.shift();
+          
+          if (currentTest.type === 'header') {
+            addLine('info', currentTest.text);
+            setTimeout(runNextTest, 500);
+            return;
+          }
+          
+          // Update pending count
+          results.pending--;
+          
+          // Add test execution line
+          addLine('command', `Running test: ${currentTest.category} - ${currentTest.name}`);
+          
+          // Simulate test execution time
+          const executionTime = Math.random() * 1000 + 500; // Random time between 500ms and 1500ms
+          
+          setTimeout(() => {
+            // Show test result
+            if (currentTest.status === 'passed') {
+              addLine('success', `✓ ${currentTest.name} (${currentTest.time})`);
+              results.passed++;
+            } else if (currentTest.status === 'failed') {
+              addLine('error', `✗ ${currentTest.name} (${currentTest.time})`);
+              addLine('error', `  Error: ${currentTest.error}`);
+              results.failed++;
+            } else if (currentTest.status === 'warning') {
+              addLine('warning', `⚠ ${currentTest.name} (${currentTest.time})`);
+              addLine('warning', `  Warning: ${currentTest.warning}`);
+              results.passed++; // Warnings count as passes
+            }
+            
+            // Update results display
+            updateResultsDisplay();
+            
+            // Run next test
+            setTimeout(runNextTest, 200);
+          }, executionTime);
+        }
+        
+        // Finish the test run
+        function finishTestRun() {
+          const totalTests = results.passed + results.failed;
+          const passRate = Math.round((results.passed / totalTests) * 100);
+          
+          addLine('info', '------------------------');
+          addLine('info', `Test suite completed in ${Math.round(Math.random() * 5 + 3)}s`);
+          addLine('info', `Total tests: ${totalTests}`);
+          addLine('success', `Passed: ${results.passed} (${passRate}%)`);
+          
+          if (results.failed > 0) {
+            addLine('error', `Failed: ${results.failed} (${100 - passRate}%)`);
+          }
+          
+          addLine('command', '');
+          isRunning = false;
+        }
+        
+        // Add a line to the terminal
+        function addLine(className, text) {
+          const line = document.createElement('div');
+          line.className = `terminal-line ${className}`;
+          line.textContent = text;
+          terminalContent.appendChild(line);
+          
+          // Auto-scroll to bottom
+          terminalContent.scrollTop = terminalContent.scrollHeight;
+        }
+        
+        // Type a command character by character
+        function typeCommand(command, callback) {
+          let charIndex = 0;
+          const cmdLine = document.createElement('div');
+          cmdLine.className = 'terminal-line command';
+          cmdLine.innerHTML = '$ <span class="command-text"></span><span class="typing-cursor">_</span>';
+          terminalContent.appendChild(cmdLine);
+          
+          const commandText = cmdLine.querySelector('.command-text');
+          
+          const typingInterval = setInterval(() => {
+            if (charIndex < command.length) {
+              commandText.textContent += command.charAt(charIndex);
+              charIndex++;
+            } else {
+              clearInterval(typingInterval);
+              setTimeout(() => {
+                cmdLine.innerHTML = '$ ' + command;
+                if (callback) callback();
+              }, 500);
+            }
+          }, 50);
+        }
+        
+        // Clear the terminal
+        function clearTerminal() {
+          terminalContent.innerHTML = '';
+          const initialLine = document.createElement('div');
+          initialLine.className = 'terminal-line';
+          initialLine.innerHTML = '$ <span class="typing-cursor">_</span>';
+          terminalContent.appendChild(initialLine);
+        }
+        
+        // Reset test results
+        function resetTestResults() {
+          results = {
+            passed: 0,
+            failed: 0,
+            pending: 0
+          };
+          updateResultsDisplay();
+        }
+        
+        // Update the results display
+        function updateResultsDisplay() {
+          passedCount.textContent = results.passed;
+          failedCount.textContent = results.failed;
+          pendingCount.textContent = results.pending;
+        }
+      });
+    </script>
   </body>
 </html> 

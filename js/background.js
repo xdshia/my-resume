@@ -128,5 +128,49 @@ function onWindowResize() {
 
 window.addEventListener('resize', onWindowResize, false);
 
+// Terminal Button Functionality
+const terminalBtn = document.querySelector('.terminal-btn');
+const commands = ['system.exe', 'access.dll', 'scan.sys', 'hack.bat'];
+let currentCommand = 0;
+
+terminalBtn.addEventListener('click', () => {
+  // Add glitch effect
+  terminalBtn.classList.add('glitch');
+  setTimeout(() => {
+    terminalBtn.classList.remove('glitch');
+  }, 300);
+  
+  // Change command text
+  const typingText = terminalBtn.querySelector('.typing-text');
+  currentCommand = (currentCommand + 1) % commands.length;
+  
+  // Reset the animation by removing and re-adding the element
+  const newTypingText = document.createElement('span');
+  newTypingText.className = 'typing-text';
+  newTypingText.textContent = commands[currentCommand];
+  
+  typingText.parentNode.replaceChild(newTypingText, typingText);
+  
+  // Easter egg: Change background particle colors
+  const particleMaterial = particles.material;
+  const colors = [0x00FFFF, 0xFF00FF, 0x00FF00, 0xFFFF00];
+  particleMaterial.color.setHex(colors[currentCommand]);
+  
+  // Random ship movement burst
+  ships.forEach(ship => {
+    const randomFactor = Math.random() * 5 + 2;
+    ship.userData.speed.x *= randomFactor;
+    ship.userData.speed.y *= randomFactor;
+    ship.userData.speed.z *= randomFactor;
+    
+    // Reset speeds after 2 seconds
+    setTimeout(() => {
+      ship.userData.speed.x /= randomFactor;
+      ship.userData.speed.y /= randomFactor;
+      ship.userData.speed.z /= randomFactor;
+    }, 2000);
+  });
+});
+
 init();
 animate(); 
